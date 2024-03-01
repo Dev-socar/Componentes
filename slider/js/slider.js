@@ -20,16 +20,16 @@ function galeria() {
       imagen.addEventListener("click", mostrarImagen);
     });
   }
-}
+} 
 function cargarImagen(imagen) {
-  const img = document.createElement('IMG');
-  img.setAttribute('loading','lazy')
-  img.setAttribute('alt', 'Imagen')
-  img.setAttribute('src', '');
+  const img = document.createElement("IMG");
+  img.setAttribute("loading", "lazy");
+  img.setAttribute("alt", "Imagen");
+  img.setAttribute("src", "");
   document.querySelector(".slider__imagen-xl").appendChild(img);
   const { value: urlImg } = imagen.attributes.src;
   const layout = document.querySelector(".slider__imagen-xl img");
-  layout.src = urlImg
+  layout.src = urlImg;
 }
 function mostrarImagen(e) {
   const { value: urlNueva } = e.target.attributes.src;

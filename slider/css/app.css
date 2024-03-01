@@ -52,7 +52,7 @@ img {
 }
 
 .slider {
-  padding-top: 5rem;
+  padding: 5rem;
 }
 .slider__grid {
   padding: 2rem;
@@ -118,9 +118,9 @@ img {
   }
 }
 .slider__imagen img {
-  view-timeline-name: --image;
+  /* view-timeline-name: --image;
   view-timeline-axis: block;
-  animation-timeline: --image;
+  animation-timeline: --image; */
   animation-name: show;
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
